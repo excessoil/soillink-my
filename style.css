@@ -102,7 +102,7 @@ nav a:hover {
             rgba(245, 248, 241, 0.25) 60%,
             rgba(245, 248, 241, 0.00) 100%
         ),
-        url("images/soil-project.jpg");
+        url("soil-project.jpg");
 
     background-size: cover;
     background-position: center;
@@ -465,7 +465,7 @@ footer p {
                 rgba(245, 248, 241, 0.88),
                 rgba(245, 248, 241, 0.70)
             ),
-            url("images/soil-project.jpg");
+            url("soil-project.jpg");
     }
 
     .hero h2 {
