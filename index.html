@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoilLink MY | Sustainable Soil Reuse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🌱</span>
+            <h1>SoilLink <span>MY</span></h1>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#find">Find Soil</a>
+            <a href="#list">List Soil</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#list" class="login-button">List Your Soil</a>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h2>
+                Connecting Surplus Soil
+                <br>
+                to New Opportunities
+            </h2>
+
+            <p>
+                SoilLink MY connects construction projects with surplus
+                excavated soil to projects that require suitable soil,
+                promoting sustainable soil reuse in Malaysia.
+            </p>
+
+            <a href="#find" class="hero-button">
+                Find Available Soil →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section" id="find">
+
+        <h2>🔎 Find Available Soil</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchLocation"
+                placeholder="📍 Enter location (e.g. Shah Alam)"
+            >
+
+            <select id="searchType">
+
+                <option value="">All Soil Types</option>
+                <option value="Clay">Clay</option>
+                <option value="Sandy Soil">Sandy Soil</option>
+                <option value="Topsoil">Topsoil</option>
+                <option value="Fill Soil">Fill Soil</option>
+
+            </select>
+
+            <input
+                type="number"
+                id="searchQuantity"
+                placeholder="Minimum quantity (tonnes)"
+            >
+
+            <button onclick="searchSoil()" class="search-button">
+                🔎 Search
+            </button>
+
+            <button onclick="showAllSoil()" class="show-button">
+                Show All
+            </button>
+
+        </div>
+
+        <div id="soilResults" class="soil-grid"></div>
+
+    </section>
+
+
+    <!-- SUSTAINABILITY FEATURES -->
+    <section class="features" id="about">
+
+        <div class="feature">
+
+            <div class="feature-icon">♻️</div>
+
+            <h3>Promote</h3>
+            <p>Sustainability</p>
+
+        </div>
+
+        <div class="feature">
+
+            <div class="feature-icon">👷</div>
+
+            <h3>Support</h3>
+            <p>Construction Projects</p>
+
+        </div>
+
+        <div class="feature">
+
+            <div class="feature-icon">🌱</div>
+
+            <h3>Reduce</h3>
+            <p>Soil Disposal</p>
+
+        </div>
+
+        <div class="feature">
+
+            <div class="feature-icon">📍</div>
+
+            <h3>Build a Greener</h3>
+            <p>Malaysia</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIST SOIL FORM -->
+    <section class="container" id="list">
+
+        <h2>List Your Surplus Soil</h2>
+
+        <p>
+            Have surplus excavated soil?
+            Share your listing to connect with projects that need soil.
+        </p>
+
+        <form id="soilForm">
+
+            <label>Project Name</label>
+
+            <input
+                type="text"
+                id="projectName"
+                placeholder="Enter project name"
+                required
+            >
+
+            <label>Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter project location"
+                required
+            >
+
+            <label>Soil Type</label>
+
+            <select id="soilType" required>
+
+                <option value="">Select soil type</option>
+                <option value="Clay">Clay</option>
+                <option value="Sandy Soil">Sandy Soil</option>
+                <option value="Topsoil">Topsoil</option>
+                <option value="Fill Soil">Fill Soil</option>
+
+            </select>
+
+            <label>Available Quantity (tonnes)</label>
+
+            <input
+                type="number"
+                id="quantity"
+                min="1"
+                placeholder="Enter quantity"
+                required
+            >
+
+            <label>Description</label>
+
+            <textarea
+                id="description"
+                placeholder="Describe your soil"
+            ></textarea>
+
+            <button type="submit">Submit Soil Listing</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            SoilLink MY | Sustainable Soil Reuse Platform
+        </p>
+
+        <p>
+            Reuse Today, Build a Greener Tomorrow.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
